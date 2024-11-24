@@ -9,11 +9,14 @@
     <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Title</h3>
+  <h3 align="center">Bank Bar</h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  Short Description. (Optional)
+  1. Creating a modern yet vintage and stylish website for a bar located in Bonifacio Global City (BGC), named "Bank Bar".
+  2. Proving a user-friendly website and maximizing efficiency for every users to fully enjoy their experience at the Bank Bar through their use of the website
+  3. Multipage Website
+  4. HTML, CSS, Javascript, & Bootstrap
 </div>
 
 <br />

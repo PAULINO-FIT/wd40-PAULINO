@@ -4,16 +4,214 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bank Bar</title>
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Cormorant Garamond', serif;
+      cursor: default;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .navbar-brand, .nav-link {
+      font-family: 'Playfair Display', serif;
+      color: #ffffff !important;
+    }
+
+    .hero-section {
+      background: url('/Users/miguelfrancopaulino/Downloads/wd40-PAULINO/assets/img/BANKBAR.jpg') no-repeat center center;
+      background-size: cover;
+      color: #ffffff;
+      font-family: 'Playfair Display', serif;
+    }
+
+    button {
+      padding: 0.8em 1.8em;
+      border: 2px solid #101010;
+      position: relative;
+      overflow: hidden;
+      background-color: #d49c61;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: bold;
+      transition: .3s;
+      z-index: 1;
+      font-family: inherit;
+      color: #161615;
+    }
+
+    button::before {
+      content: '';
+      width: 0;
+      height: 300%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+      background: #ffffff;
+      transition: .5s ease;
+      display: block;
+      z-index: -1;
+      color: #000;
+    }
+
+    button:hover::before {
+      width: 105%;
+    }
+
+    button:hover {
+      color: #111;
+    }
+
+    .btn-primary {
+      display: none;
+    }
+
+    section {
+      padding: 5rem 0;
+    }
+
+    #about h2, #menu h2, #contact h2, #events h2 {
+      color: #d49c61;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .footer {
+      background-color: #000;
+      color: #d49c61;
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    a {
+      color: #d49c61;
+      text-decoration: none;
+      font-family: 'Playfair Display', serif;
+    }
+
+    a:hover {
+      color: #fff;
+    }
+
+    .form-control {
+      background-color: #111;
+      color: #d49c61;
+      border: 1px solid #d49c61;
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    .form-control::placeholder {
+      color: #888;
+    }
+
+    .form-control:focus {
+      background-color: #222;
+      color: #d49c61;
+      border-color: #d49c61;
+    }
+
+    .cursor {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 60px;
+      height: 60px;
+      border: 1px solid white;
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      z-index: 9999;
+      transition: width 0.1s, height 0.1s;
+    }
+
+    .cursor-small {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      background-color: white;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 10000;
+      transform: translate(-50%, -50%);
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3rem;
+    }
+
+    .vframe {
+      width: 100%;
+      max-width: 800px;
+      aspect-ratio: 16/9;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .card {
+      box-sizing: border-box;
+      width: 280px;
+      height: 374px;
+      background: rgba(6, 6, 6, 0.58);
+      border: 1px solid rgb(238, 161, 45);
+      box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+      backdrop-filter: blur(6px);
+      border-radius: 17px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.5s;
+      display: AUTO;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+      font-weight: bolder;
+      color: black;
+    }
+
+    .card:hover {
+      border: 1px solid black;
+      transform: scale(1.05);
+    }
+
+    .card:active {
+      transform: scale(0.95) rotateZ(1.7deg);
+    }
+
+    .card img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  </style>
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: blue;">
+  <nav class="navbar navbar-expand-lg" style="position: fixed; top: 0; left: 0; right: 0; z-index: 9999; backdrop-filter: blur(10px)">
     <div class="container">
-      <a class="navbar-brand" href="#">Bank Bar</a>
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/img/images-4.png" alt="Bank Bar Logo" class="me-2" style="height: 40px;">
+        BANK BAR
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -28,103 +226,123 @@
     </div>
   </nav>
 
-
-  <header class="hero-section text-white text-center d-flex align-items-center" style="background-image: url('hero.jpg'); background-color: rgb(0, 0, 0);">
+  <header class="hero-section text-center d-flex align-items-center" style="height: 100vh;">
     <div class="container">
-      <h1 class="display-4">Bank Bar</h1>
-      <p class="lead">A modern experience with vintage vibes</p>
-      <a href="#about" class="btn btn-primary">Discover More</a>
+      <img src="/Users/miguelfrancopaulino/Downloads/wd40-PAULINO/assets/img/logo white bank.png" alt="Bank Bar Logo" class="img-fluid" style="max-height: 360px;">
+      <p class="lead">by The Moment Group</p>
+      <button>RESERVE YOUR VAULT</button>
     </div>
   </header>
 
-  
-  <section id="about" class="py-5 bg-light">
+  <section id="about">
     <div class="container">
-      <div class="row">
-        <div class="col-md-6">
+      <div class="row justify-content-center">
+        <div class="col-md-6 text-center">
           <h2>About Us</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+          <p>A top shelf drinking den, or so we'd like to think.
+            By @themomentgroup
+            Hours: Tues-Sat, 5PM-1AM</p>
         </div>
-        <div class="col-md-6">
-          <img src="about.jpg" class="img-fluid rounded" alt="About Us">
+      </div>
+      <div class="button-container">
+        <div class="card">
+          <img src="/Users/miguelfrancopaulino/Downloads/wd40-PAULINO/assets/img/pic1.jpg" alt="Image 1">
+        </div>
+        <div class="card">
+          <img src="/Users/miguelfrancopaulino/Downloads/wd40-PAULINO/assets/img/pic2.jpg" alt="Image 2">
+        </div>
+        <div class="card">
+          <img src="/Users/miguelfrancopaulino/Downloads/wd40-PAULINO/assets/img/pic3.jpg" alt="Image 3">
         </div>
       </div>
     </div>
   </section>
 
-
-  <section id="menu" class="py-5">
-    <div class="container text-center">
+  <section id="menu" class="text-center">
+    <div class="container">
       <h2>Our Menu</h2>
       <p>Explore our wide range of drinks and dishes.</p>
+      <div class="button-container">
+        <div class="card">
+          <img src="/Users/miguelfrancopaulino/Downloads/wd40-PAULINO/assets/img/cocktails.jpg" alt="Image 1">
+        </div>
+        <div class="card">
+          <img src="/Users/miguelfrancopaulino/Downloads/wd40-PAULINO/assets/img/beer.jpg" alt="Image 2">
+        </div>
+        <div class="card">
+          <img src="/Users/miguelfrancopaulino/Downloads/wd40-PAULINO/assets/img/snacks.jpg" alt="Image 3">
+        </div>
+      </div>
       <div class="row">
         <div class="col-md-4">
-          <img src="menu1.jpg" class="img-fluid rounded-circle" alt="Menu Item">
-          <h4>Signature Cocktails</h4>
+          <img src="menu1.jpg" class="img-fluid rounded-circle mb-3" alt="Menu Item">
+          <h4 class="text-gold">Signature Cocktails</h4>
         </div>
         <div class="col-md-4">
-          <img src="menu2.jpg" class="img-fluid rounded-circle" alt="Menu Item">
-          <h4>Craft Beers</h4>
+          <img src="menu2.jpg" class="img-fluid rounded-circle mb-3" alt="Menu Item">
+          <h4 class="text-gold">Beer Selection</h4>
         </div>
         <div class="col-md-4">
-          <img src="menu3.jpg" class="img-fluid rounded-circle" alt="Menu Item">
-          <h4>Appetizers</h4>
+          <img src="menu3.jpg" class="img-fluid rounded-circle mb-3" alt="Menu Item">
+          <h4 class="text-gold">Snacks</h4>
         </div>
       </div>
     </div>
   </section>
 
-
-  <section id="events" class="py-5 bg-dark text-white">
-    <div class="container text-center">
-      <h2>Upcoming Events</h2>
-      <p>Don't miss out on our special nights.</p>
+  <section id="events" class="text-center">
+    <div class="container">
+      <h2>Events</h2>
+      <p>Don't miss out on our upcoming events!</p>
       <div class="row">
         <div class="col-md-4">
-          <h4>Live Music Night</h4>
-          <p>Every Friday at 8 PM</p>
+          <div class="event-card">
+            <h4>Live Music Night</h4>
+            <p>Join us every Friday for live performances by local bands.</p>
+          </div>
         </div>
         <div class="col-md-4">
-          <h4>Whiskey Tasting</h4>
-          <p>Monthly on Saturdays</p>
+          <div class="event-card">
+            <h4>Trivia Tuesday</h4>
+            <p>Compete in trivia nights and win amazing prizes!</p>
+          </div>
         </div>
         <div class="col-md-4">
-          <h4>Pub Quiz</h4>
-          <p>Every Wednesday at 7 PM</p>
+          <div class="event-card">
+            <h4>Happy Hour</h4>
+            <p>Enjoy discounted drinks from 5-7 PM daily!</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-container">
+        <div class="vframe">
+          <iframe
+            src="https://www.youtube.com/embed/0MOwdAvx3Kk"
+            title="SMISKI"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
         </div>
       </div>
     </div>
   </section>
 
-
-  <section id="contact" class="py-5 bg-light">
+  <section id="contact">
     <div class="container text-center">
       <h2>Contact Us</h2>
-      <p>We'd love to hear from you!</p>
+      <p>Get in touch for reservations or inquiries.</p>
       <form>
-        <div class="row g-3">
-          <div class="col-md-6">
-            <input type="text" class="form-control" placeholder="Your Name">
-          </div>
-          <div class="col-md-6">
-            <input type="email" class="form-control" placeholder="Your Email">
-          </div>
-          <div class="col-12">
-            <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
-          </div>
-          <div class="col-12">
-            <button type="submit" class="btn btn-primary">Send</button>
-          </div>
-        </div>
+        <input type="text" class="form-control mb-3" placeholder="Your Name">
+        <input type="email" class="form-control mb-3" placeholder="Your Email">
+        <textarea class="form-control mb-3" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
       </form>
     </div>
   </section>
 
- 
-  <footer class="bg-dark text-white py-3 text-center">
+  <footer class="footer py-3 text-center">
     <p>&copy; 2024 Bank Bar. All Rights Reserved.</p>
   </footer>
-
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>

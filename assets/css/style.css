@@ -1,24 +1,115 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+.navbar-brand, .nav-link {
+  font-family: 'Playfair Display', serif;
+  color: #FFD700 !important;
+}
+
 .hero-section {
-    height: 100vh;
-    background-image: url('/assets/img/bg.jpg'); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  
-  .hero-section .container {
-    max-width: 600px;
-    color: rgb(0, 0, 0);
-    background-image: url(/assets/img/bg.jpg) ;
-  }
-  
-  .navbar-brand {
-    font-family: 'Georgia', serif;
-    font-size: 1.8rem;
-  }
-  
-  footer p {
-    margin: 0;
-  }
-  
+  background: url('/Users/miguelfrancopaulino/Downloads/wd40-PAULINO/assets/img/BANKBAR.jpg') no-repeat center center;
+  background-size: cover;
+  color: #ffffff;
+  font-family: 'Playfair Display', serif;
+}
+
+button {
+  padding: 0.8em 1.8em;
+  border: 2px solid #c3a417;
+  position: relative;
+  overflow: hidden;
+  background-color: #d49c61;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #000000;
+}
+
+button::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #ffffff;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+}
+
+button:hover::before {
+  width: 105%;
+}
+
+button:hover {
+  color: #111;
+}
+
+.btn-primary {
+  display: none;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+#about h2, #menu h2, #contact h2, #events h2 {
+  color: #FFD700;
+  font-family: 'Playfair Display', serif;
+}
+
+.footer {
+  background-color: #000;
+  color: #FFD700;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+a {
+  color: #FFD700;
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+}
+
+a:hover {
+  color: #fff;
+}
+
+.form-control {
+  background-color: #111;
+  color: #FFD700;
+  border: 1px solid #FFD700;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.form-control::placeholder {
+  color: #888;
+}
+
+.form-control:focus {
+  background-color: #222;
+  color: #FFD700;
+  border-color: #FFD700;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.6);
+}

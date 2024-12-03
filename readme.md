@@ -6,7 +6,7 @@
 <div align="center">
   <a href="https://github.com/zyx-0314/">
   <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/SLYTHERIN.png" alt="Nyebe" width="130" height="100">
+    <img src="./WD40-PAULINO/assets/img/SLYTHERIN.png" alt="Nyebe" width="130" height="100">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
   <h3 align="center">Bank Bar</h3>
@@ -64,14 +64,14 @@ Description of the project in details.
 
 Guiding Question:
 - What is the project
-    This project is about creating a website for a known bar in BGC, Bank Bar. 
+    1. This project is about creating a website for a known bar in BGC, Bank Bar. 
 - Whats the purpose
-    The purpose of this project is to enhance my ability in creating a website while using my creative skills.
+    2. The purpose of this project is to enhance my ability in creating a website while using my creative skills.
 - What are key components
-  Single Page Website / Multi-page
+    3. Single Page Website / Multi-page
 
 - What technology used and how it is used
-ss, html, boostrap, javascript
+    4. ss, html, boostrap, javascript
 
 
 ### Key Components

@@ -6,17 +6,14 @@
 <div align="center">
   <a href="https://github.com/zyx-0314/">
   <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
+    <img src="./assets/img/SLYTHERIN.png" alt="Nyebe" width="130" height="100">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
   <h3 align="center">Bank Bar</h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  1. Creating a modern yet vintage and stylish website for a bar located in Bonifacio Global City (BGC), named "Bank Bar".
-  2. Proving a user-friendly website and maximizing efficiency for every users to fully enjoy their experience at the Bank Bar through their use of the website
-  3. Multipage Website
-  4. HTML, CSS, Javascript, & Bootstrap
+It’s a multipage website for the stylish bar named “Bank Bar” inside Bonifacio Global City (BGC), it has a modern old school look. A user friendly and fast website is going to be a priority on the website that’s going to make a visit a more fun thing for them. The site is built with HTML, CSS, Javascript, and Bootstrap in order to present a sleek design and an easy navigating for the bar’s unique ambiance and customers.
 </div>
 
 <br />
@@ -67,9 +64,15 @@ Description of the project in details.
 
 Guiding Question:
 - What is the project
+    This project is about creating a website for a known bar in BGC, Bank Bar. 
 - Whats the purpose
+    The purpose of this project is to enhance my ability in creating a website while using my creative skills.
 - What are key components
+  Single Page Website / Multi-page
+
 - What technology used and how it is used
+ss, html, boostrap, javascript
+
 
 ### Key Components
 <!-- TODO: List of Key Components -->

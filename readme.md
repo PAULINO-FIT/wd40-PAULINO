@@ -75,14 +75,9 @@ This project highlights the harmony between functional design and aesthetic exce
 
 Guiding Question:
 - What is the project
-    1. This project is about creating a website for a known bar in BGC, Bank Bar. 
 - Whats the purpose
-    2. The purpose of this project is to enhance my ability in creating a website while using my creative skills.
 - What are key components
-    3. Single Page Website / Multi-page
-
 - What technology used and how it is used
-    4. ss, html, boostrap, javascript
 
 
 ### Key Components

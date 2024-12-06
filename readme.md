@@ -60,18 +60,24 @@ It’s a multipage website for the stylish bar named “Bank Bar” inside Bonif
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-Description of the project in details.
+Here’s a project description you can use for your Bank Bar website:  
+
+---
+
+**Bank Bar Website Project**  
+
+Final Project in CCS0027L. The Bank Bar website is a sleek, single-page digital experience designed to reflect the establishment's refined elegance and sophistication. Built using HTML, CSS, JavaScript, and Bootstrap, the site features a luxurious black and gold theme, mirroring the brand’s opulent ambiance.  
+
+The design prioritizes user-friendliness, offering seamless navigation for guests seeking essential information like menus, events, and reservations. Its responsive layout ensures the site looks stunning on all devices, providing an immersive and visually striking interface for a modern audience.  
+
+This project highlights the harmony between functional design and aesthetic excellence, embodying the essence of Bank Bar in the digital realm.  
+
 
 Guiding Question:
 - What is the project
-    1. This project is about creating a website for a known bar in BGC, Bank Bar. 
 - Whats the purpose
-    2. The purpose of this project is to enhance my ability in creating a website while using my creative skills.
 - What are key components
-    3. Single Page Website / Multi-page
-
 - What technology used and how it is used
-    4. ss, html, boostrap, javascript
 
 
 ### Key Components

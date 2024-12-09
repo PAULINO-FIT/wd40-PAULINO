@@ -73,13 +73,6 @@ The design prioritizes user-friendliness, offering seamless navigation for guest
 This project highlights the harmony between functional design and aesthetic excellence, embodying the essence of Bank Bar in the digital realm.  
 
 
-Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
-
-
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->

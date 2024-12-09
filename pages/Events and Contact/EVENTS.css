@@ -1,0 +1,43 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Cormorant Garamond', serif;
+  }
+  
+  h2, h3, h4, p {
+    color: #FFD700;
+  }
+  
+  .navbar {
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  .navbar-brand, .nav-link {
+    color: #FFD700 !important;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  #events .row > div {
+    background-color: #222;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+  }
+  
+  footer {
+    background-color: #222;
+    padding: 20px 0;
+  }
+  
+  footer p {
+    margin: 0;
+    color: #FFD700;
+  }
+  
+  .ratio {
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  

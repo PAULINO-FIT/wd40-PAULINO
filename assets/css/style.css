@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   background-color: #000;
   color: #fff;
@@ -8,23 +9,30 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
 }
 
+.navbar {
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.8);
+}
+
 .navbar-brand, .nav-link {
   font-family: 'Playfair Display', serif;
   color: #FFD700 !important;
 }
 
+/* Hero Section */
 .hero-section {
-  background-image: url('assets/img/bagong bg.jpg'); /* Adding the background image */
-  background-size: cover; /* Ensure the image covers the section */
-  background-position: center center; /* Center the background image */
-  background-repeat: no-repeat; /* Prevent image repetition */
+  background-image: url('assets/img/bagong bg.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   font-family: 'Playfair Display', serif;
-  height: 100vh; /* Ensure the hero section takes the full height of the viewport */
+  height: 100vh;
   display: flex;
-  align-items: center; /* Center content vertically */
-  justify-content: center; /* Center content horizontally */
+  align-items: center;
+  justify-content: center;
 }
 
+/* Button Styles */
 button {
   padding: 0.8em 1.8em;
   border: 2px solid #c3a417;
@@ -63,6 +71,7 @@ button:hover {
   color: #111;
 }
 
+/* Button Container Styles */
 .button-container {
   display: flex;
   justify-content: space-between;
@@ -74,6 +83,8 @@ button:hover {
   flex: 1;
   max-width: 300px;
   text-align: center;
+  color: #FFD700;
+  overflow: hidden;
 }
 
 .button-container img {
@@ -81,18 +92,34 @@ button:hover {
   height: 200px;
   object-fit: cover;
   border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 
-/* Space between sections */
+.button-container img:hover {
+  transform: scale(1.1);
+}
+
+.button-container h3 {
+  margin-top: 15px;
+  font-size: 1.25rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.button-container p {
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+/* Section Spacing */
 section {
-  padding: 60px 0;  /* Adds space above and below each section */
+  padding: 60px 0;
 }
 
 #about, #menu, #events, #contact {
-  margin-bottom: 60px;  /* Adds extra space between sections */
+  margin-bottom: 60px;
 }
 
-/* Adjust video container */
+/* Video Container */
 .video-container iframe {
   width: 1000px;
   height: 563px;
@@ -100,7 +127,7 @@ section {
   border: none;
 }
 
-/* Footer styling */
+/* Footer Styles */
 footer {
   padding: 30px 0;
   background-color: #222;
@@ -109,4 +136,5 @@ footer {
 
 footer p {
   margin: 0;
+  color: #FFD700;
 }
